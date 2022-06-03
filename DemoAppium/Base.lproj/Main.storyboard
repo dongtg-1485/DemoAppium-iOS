@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DemoAppium" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARo-hH-BFG">
+                                <rect key="frame" x="163" y="94" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIA-Tl-zzO" customClass="CommonInputView" customModule="DemoAppium" customModuleProvider="target">
+                                <rect key="frame" x="20" y="165" width="374" height="110"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="Me2-te-CcL"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BGQ-vu-wVg" customClass="CommonInputView" customModule="DemoAppium" customModuleProvider="target">
+                                <rect key="frame" x="20" y="325" width="374" height="110"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="5cP-T7-rJ2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="110" id="l2x-DQ-4E5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="BGQ-vu-wVg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="90F-7c-zFC"/>
+                            <constraint firstItem="WIA-Tl-zzO" firstAttribute="top" secondItem="ARo-hH-BFG" secondAttribute="bottom" constant="50" id="CJl-Nx-lTO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WIA-Tl-zzO" secondAttribute="trailing" constant="20" id="Mrb-V1-DbH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BGQ-vu-wVg" secondAttribute="trailing" constant="20" id="PZs-Jx-Nut"/>
+                            <constraint firstItem="BGQ-vu-wVg" firstAttribute="top" secondItem="WIA-Tl-zzO" secondAttribute="bottom" constant="50" id="hhW-tI-v27"/>
+                            <constraint firstItem="ARo-hH-BFG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rB4-sa-WVg"/>
+                            <constraint firstItem="ARo-hH-BFG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="wrh-Hc-k1R"/>
+                            <constraint firstItem="WIA-Tl-zzO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zwf-pM-myF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commonInput_1" destination="WIA-Tl-zzO" id="SCU-zl-Dij"/>
+                        <outlet property="commonInput_2" destination="BGQ-vu-wVg" id="vfe-yv-by4"/>
+                        <outlet property="helloLabel" destination="ARo-hH-BFG" id="rwa-iH-s8p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="98"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
